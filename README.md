@@ -6,12 +6,10 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ![](images/nft-preview.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution Page](https://your-solution-url.com)
+- Live Site URL: [live site](https://nft-preview-card-component-main-aiv146ard-wariboko65.vercel.app/#)
 
 ### Built with
 
@@ -24,6 +22,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Author
 
-- Website - [John Godwin Oamien](https://www.your-site.com)
+- Website - [John Godwin Oamien](https://nft-preview-card-component-main-aiv146ard-wariboko65.vercel.app/#)
 - Frontend Mentor - [@Wariboko65](https://www.frontendmentor.io/profile/Wariboko65)
 - Twitter - [@Gdwin656](https://www.twitter.com/Gdwin656)
