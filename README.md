@@ -8,7 +8,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [solution Page](https://your-solution-url.com)
+- Solution URL: [solution Page](https://www.frontendmentor.io/solutions/css-sass-qHYyQrhWVW)
 - Live Site URL: [live site](https://nft-preview-card-component-main-aiv146ard-wariboko65.vercel.app/#)
 
 ### Built with
