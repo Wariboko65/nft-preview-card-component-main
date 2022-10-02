@@ -2,130 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  <link rel="stylesheet" type="text/css" href="index.css">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 13px; text-align: center; margin-top: 10px; color: hsl(215, 51%, 70%); }
-    .attribution a { color: hsl(178, 100%, 50%); letter-spacing: 1px; }
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: calc(100vh - 16px);
-      background-color: hsl(217, 54%, 11%);
-    }
-
-    .container {
-      height: auto;
-      width: 300px;
-      background-color: hsl(216, 50%, 16%);
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 5px 30px 10px hsl(215, 55%, 6%);
-    }
-    h2, .jules {
-      color: hsl(0, 0%, 100%);
-      transition: 0.2s;
-    }
-    .image .img1 {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 10px;
-    }
-    p {
-      color: hsl(215, 51%, 70%);
-    }
-    h3{
-      color: hsl(178, 100%, 50%);
-      font-weight: normal;
-      border-bottom: 1px solid hsl(215, 32%, 27%);
-      padding-bottom: 15px;
-    }
-    .days_left {
-      color: hsl(215, 51%, 70%);
-      margin-left: 93px;
-      font-weight: normal;
-    }
-    .days_left > img {
-      vertical-align: top;
-    }
-    p > img {
-      vertical-align: middle;
-      margin-right: 10px;
-      border: 1px solid hsl(0, 0%, 100%);
-      border-radius: 50%;
-    } 
-    .image {
-      position: relative;
-      height: 300px;
-      width: 300px;
-    }
-    .background {
-      position: absolute;
-      background-color: hsl(178, 100%, 50%);
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      border-radius: 10px;
-      transition: 0.5s;
-      opacity: 0;
-    }
-    .image:hover .background {
-      opacity: 0.6;
-      cursor: pointer;
-    }
-    .eye {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transition: 0.5s;
-      opacity: 0;
-    }
-    .image:hover .eye {
-      opacity: 1;
-    }
-    .jules:hover, h2:hover {
-      color: hsl(178, 100%, 50%);
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="image">
+  <main>
+  <article class="container">
+    <section class="image">
       <img class="img1" src="images/image-equilibrium.jpg" alt="icon" height="300" width="300">
       <div class="background"></div>
-      <img class="eye" src="images/icon-view.svg" alt="eye">
-    </div>
-    <div class="text">
-      <h2>Equilibrium #3429</h2>
+      <img class="eye" src="images/icon-view.svg" aria-hidden="true">
+    </section>
+    <section class="text">
+      <h2><a href="#">Equilibrium #3429</a></h2>
       <p style="font-size: 18px;">Our Equilibrium collection promotes balance and calm.</p>
-      <h3><img src="images/icon-ethereum.svg" alt="icon" width="10" height="14"> 0.041 ETH
+      <h3><img src="images/icon-ethereum.svg" aria-hidden="true" width="10" height="14"> 0.041 ETH
         <span class="days_left">
-          <img src="images/icon-clock.svg" alt="icon" width="20" height="20">
+          <img src="images/icon-clock.svg" aria-hidden="true" width="20" height="20">
           3 days left
         </span>
       </h3>
       <p style="margin: -5px;"><img src="images/image-avatar.png" alt="icon" width="30" height="30">
-        Creation of <span class="jules">Jules Wyvern</span></p>
-    </div>
-  </div>
+        Creation of <span class="jules"><a href="#">Jules Wyvern</a></span></p>
+      </section>
+  </article>
 
-  <div class="attribution">
+  <aside>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">John Godwin Oamien.</a>.
-  </div>
+  </aside>
+  </main>
 </body>
 </html>
