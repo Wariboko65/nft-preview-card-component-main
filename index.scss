@@ -10,6 +10,7 @@ $white: hsl(0, 0%, 100%);
     flex-direction: $direction;
 }
 * {
+    box-sizing: border-box;
     font-family: "Outfit", arial, sans-serif;
 }
 body {
@@ -32,17 +33,103 @@ main {
     }
     article {
         height: auto;
-        width: 300px;
+        width: 350px;
         background-color: $cardbg;
         padding: 25px;
         border-radius: 10px;
         box-shadow: 0 5px 30px 10px hsl(215, 55%, 6%);
         .image {
+            position: relative;
+            &:hover .background {
+                opacity: 0.6;
+                cursor: pointer;
+            }
+            &:hover .eye {
+                opacity: 1;
+            }
             .img1 {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 10px;
+                height: 300px;
+                width: 300px;
+            }
+            .background {
+                position: absolute;
+                background-color: hsl(178, 100%, 50%);
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                border-radius: 10px;
+                transition: 0.5s;
+                opacity: 0;
+            }
+            .eye {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transition: 0.5s;
+                opacity: 0;
+            }
+        }
+        .text {
+            h2 a{
+                color: $white;
+                text-decoration: none;
+                transition: 0.3s;
+                &:hover {
+                    color: $cyan;
+                }
+            }
+            .our {
+                color: $sblue;
+                font-size: 18px;
+            }
+            h3 {
+                color: hsl(178, 100%, 50%);
+                font-weight: normal;
+                border-bottom: 1px solid $line;
+                padding-bottom: 15px;
+                img {
+                    height: 14px;
+                    width: 10px;
+                }
+            }
+            .days_left {
+                color: $sblue;
+                margin-left: 79px;
+                font-weight: normal;
+                img {
+                    vertical-align: top;
+                    width: 20px;
+                    height: 20px;
+                }
+              }
+            .author {
+                color: $sblue;
+                margin: -5px;
+                img {
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                }
+                .jules a{
+                    text-decoration: none;
+                    color: $white;
+                    transform: 0.3s;
+                    &:hover {
+                        color: $cyan;
+                    }
+                }
             }
         }
     }
