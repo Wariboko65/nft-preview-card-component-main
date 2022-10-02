@@ -42,7 +42,6 @@ main {
             position: relative;
             &:hover .background {
                 opacity: 0.6;
-                cursor: pointer;
             }
             &:hover .eye {
                 opacity: 1;
@@ -91,11 +90,11 @@ main {
                 color: $sblue;
                 font-size: 18px;
             }
-            h3 {
+            .h3 {
                 color: hsl(178, 100%, 50%);
-                font-weight: normal;
                 border-bottom: 1px solid $line;
                 padding-bottom: 15px;
+                font-weight: bold;
                 img {
                     height: 14px;
                     width: 10px;
@@ -103,10 +102,10 @@ main {
             }
             .days_left {
                 color: $sblue;
-                margin-left: 79px;
+                margin-left: 105px;
                 font-weight: normal;
                 img {
-                    vertical-align: top;
+                    vertical-align: bottom;
                     width: 20px;
                     height: 20px;
                 }

@@ -37,7 +37,6 @@ main article .image {
 }
 main article .image:hover .background {
   opacity: 0.6;
-  cursor: pointer;
 }
 main article .image:hover .eye {
   opacity: 1;
@@ -84,23 +83,23 @@ main article .text .our {
   color: hsl(215deg, 51%, 70%);
   font-size: 18px;
 }
-main article .text h3 {
+main article .text .h3 {
   color: hsl(178deg, 100%, 50%);
-  font-weight: normal;
   border-bottom: 1px solid hsl(215deg, 32%, 27%);
   padding-bottom: 15px;
+  font-weight: bold;
 }
-main article .text h3 img {
+main article .text .h3 img {
   height: 14px;
   width: 10px;
 }
 main article .text .days_left {
   color: hsl(215deg, 51%, 70%);
-  margin-left: 79px;
+  margin-left: 105px;
   font-weight: normal;
 }
 main article .text .days_left img {
-  vertical-align: top;
+  vertical-align: bottom;
   width: 20px;
   height: 20px;
 }
